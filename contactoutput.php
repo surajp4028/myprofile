@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>connect us</title>
     <style>
         *{
             margin: 0px;
@@ -55,22 +55,13 @@
   $lastname = $_POST['lm'];
   $email =$_POST ['mail'];
   $msg = $_POST['msg'];
-  echo "$name ".$name;
-//   extract($_POST);
-//   $file=fopen("database.txt","a");
-//   fwrite($file,"first name :");
-//   fwrite($file,$nm."\n");
-//   fwrite($file,"last name :");
-//   fwrite($file,$lm."\n");
-//   fwrite($file,"email :");
-//   fwrite($file,$mail."\n");
-//   fwrite($file,"messge :");
-//   fwrite($file,$msg."\n\n");
-//   fwrite($file,"Next Entry\n\n");
-//   fclose($file);
-echo "lastname ".$lastname;
-echo "<br>";
-echo "email ".$email;
-echo "<br>";
-echo "msg ".$msg;
-?>
+  echo "first name".$name;
+  echo "<br>";
+ echo "last name".$lastname;
+  echo "<br>";
+ echo "email".$mail;
+  echo "<br>";
+ echo "Your message".$msg;
+  echo "<br>";
+ 
+ ?>
