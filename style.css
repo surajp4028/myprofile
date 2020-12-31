@@ -167,3 +167,14 @@ a.active,a:hover{
         background-position: center;
     }
 } */
+@media (max-width: 1118px){
+   .nav-links li a{
+       font-size: 14px;
+
+   } 
+   @media (max-width: 600px) {
+       .btn{
+           display: none;
+       }
+   }
+}
