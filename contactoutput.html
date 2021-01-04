@@ -55,7 +55,7 @@
   $lastname = $_POST['lm'];
   $email =$_POST ['mail'];
   $msg = $_POST['msg'];
-  echo "$name ".$name;
+//   echo "$name";
 //   extract($_POST);
 //   $file=fopen("database.txt","a");
 //   fwrite($file,"first name :");
@@ -68,9 +68,18 @@
 //   fwrite($file,$msg."\n\n");
 //   fwrite($file,"Next Entry\n\n");
 //   fclose($file);
-echo "lastname ".$lastname;
-echo "<br>";
-echo "email ".$email;
-echo "<br>";
-echo "msg ".$msg;
-?>
+ $email_from="suraj4028pandey@gmail.com";
+ $email_subject="New Form Submission";
+ $email_body="User fName:$name\n"."User lname:$lastname\n"."User email:$email\n"."User msg:$msg\n";
+ $to = "surajp4028@gmail.com";
+ $headers="from:$email_from\r\n"
+//  $headers ="reply-to:$email\r\n;
+
+ if(mail($to,$email_subject,$email_body,$headers)){
+     echo "email sent";
+ }
+ else {
+     echo "unbale to sent ";
+ }
+ 
+  ?>
